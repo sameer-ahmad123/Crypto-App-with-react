@@ -7,7 +7,12 @@ import Transcation from './pages/Transcation'
 import ContactUs from './pages/ContactUs'
 import Login from './pages/Login'
 import SignUp from './pages/SignUp'
-
+import Email from './pages/Email'
+import Verified from './pages/Verified'
+import ForgetPassword from './pages/ForgetPassword'
+import EmailSent from './pages/EmailSent'
+import ResetPassword from './pages/ResetPassword'
+import ResetDone from './pages/ResetDone'
 const App = () => {
   const router = createBrowserRouter([
     {
@@ -17,8 +22,40 @@ const App = () => {
      
     },
     {
-       path: "/signUP", 
+
+      path: "/forgetPassword", 
+      element: <ForgetPassword/>, 
+     
+    },
+    {
+
+      path: "/EmailSent", 
+      element: <EmailSent/>, 
+     
+    },
+    {
+
+      path: "/ResetPassword", 
+      element: <ResetPassword/>, 
+     
+    },
+    {
+
+      path: "/ResetDone", 
+      element: <ResetDone/>, 
+     
+    },
+    {
+       path: "/signUp", 
       element: <SignUp/>, 
+    },
+    {
+       path: "/Email", 
+      element: <Email/>, 
+    },
+    {
+       path: "/verified", 
+      element: <Verified/>, 
     },
     {
     
